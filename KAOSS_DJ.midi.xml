@@ -9,11 +9,12 @@
     </info>
     <controller id="KAOSS">
         <scriptfiles>
-            <file functionprefix="KAOSS" filename="Korg-KAOSS-DJ-scripts.js"/>
+            <file functionprefix="KAOSSDJ" filename="Korg-KAOSS-DJ-scripts.js"/>
         </scriptfiles>
         <controls>
+        
+<!-- JOG WHEELS-->
 <!-- DEDICATED FADERS-->
-
             <control>
                 <group>[Channel1]</group>
                 <key>volume</key>
