@@ -13,6 +13,7 @@
         </scriptfiles>
         <controls>
 <!-- DEDICATED FADERS-->
+
             <control>
                 <group>[Channel1]</group>
                 <key>volume</key>
