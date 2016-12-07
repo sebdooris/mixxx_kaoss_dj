@@ -14,6 +14,26 @@
         <controls>
         
 <!-- JOG WHEELS-->
+            <control>
+                <group>[Channel1]</group>
+                <key>KAOSSDJ.wheelTouch</key>
+                <description>Left Jog Wheel</description>
+                <status>0x97</status>
+                <midino>0x1F</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>KAOSSDJ.wheelTurn</key>
+                <description>Left Jog Wheel</description>
+                <status>0xB7</status>
+                <midino>0x0E</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
 <!-- DEDICATED FADERS-->
             <control>
                 <group>[Channel1]</group>
