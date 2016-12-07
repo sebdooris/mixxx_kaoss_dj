@@ -17,7 +17,7 @@
             <control>
                 <group>[Channel1]</group>
                 <key>KAOSSDJ.wheelTouch</key>
-                <description>Left Jog Wheel</description>
+                <description>Left Jog Wheel Touch</description>
                 <status>0x97</status>
                 <midino>0x1F</midino>
                 <options>
@@ -27,8 +27,28 @@
             <control>
                 <group>[Channel1]</group>
                 <key>KAOSSDJ.wheelTurn</key>
-                <description>Left Jog Wheel</description>
+                <description>Left Jog Wheel Turn</description>
                 <status>0xB7</status>
+                <midino>0x0E</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>KAOSSDJ.wheelTouch</key>
+                <description>Right Jog Wheel Touch</description>
+                <status>0x98</status>
+                <midino>0x1F</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>KAOSSDJ.wheelTurn</key>
+                <description>Right Jog Wheel Turn</description>
+                <status>0xB8</status>
                 <midino>0x0E</midino>
                 <options>
                     <Script-Binding/>
