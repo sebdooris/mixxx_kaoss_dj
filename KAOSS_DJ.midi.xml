@@ -1,13 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
-<MixxxControllerPreset mixxxVersion="" schemaVersion="1">
-    <info/>
+<MixxxControllerPreset mixxxVersion="2.0.0" schemaVersion="1">
+    <info>
+        <name>Korg KAOSS DJ</name>
+        <author>Seb Dooris</author>
+        <description>Controller mapping for the Korg KAOSS DJ Controller.</description>
+		<wiki></wiki>
+        <forums>https://www.mixxx.org/forums/viewtopic.php?f=7&amp;t=8479</forums>
+    </info>
     <controller id="KAOSS">
-        <scriptfiles/>
+        <scriptfiles>
+            <file functionprefix="KAOSS" filename="Korg-KAOSS-DJ-scripts.js"/>
+        </scriptfiles>
         <controls>
+<!-- DEDICATED FADERS-->
             <control>
                 <group>[Channel1]</group>
                 <key>volume</key>
-                <description>MIDI Learned from 2358 messages.</description>
+                <description>left Volume</description>
                 <status>0xB7</status>
                 <midino>0x18</midino>
                 <options>
@@ -17,7 +26,7 @@
             <control>
                 <group>[Channel2]</group>
                 <key>volume</key>
-                <description>MIDI Learned from 2597 messages.</description>
+                <description>Right Volume</description>
                 <status>0xB8</status>
                 <midino>0x18</midino>
                 <options>
@@ -27,7 +36,7 @@
             <control>
                 <group>[Master]</group>
                 <key>crossfader</key>
-                <description>MIDI Learned from 1440 messages.</description>
+                <description>X-Fader</description>
                 <status>0xB6</status>
                 <midino>0x17</midino>
                 <options>
@@ -36,170 +45,10 @@
             </control>
             <control>
                 <group>[Channel1]</group>
-                <key>pfl</key>
-                <description>MIDI Learned from 252 messages.</description>
-                <status>0x97</status>
-                <midino>0x19</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>pfl</key>
-                <description>MIDI Learned from 300 messages.</description>
-                <status>0x98</status>
-                <midino>0x19</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter1</key>
-                <description>MIDI Learned from 2112 messages.</description>
-                <status>0xB7</status>
-                <midino>0x1D</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter1</key>
-                <description>MIDI Learned from 3905 messages.</description>
-                <status>0xB8</status>
-                <midino>0x1D</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>cue_default</key>
-                <description>MIDI Learned from 38 messages.</description>
-                <status>0x97</status>
-                <midino>0x1E</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter2</key>
-                <description>MIDI Learned from 2439 messages.</description>
-                <status>0xB7</status>
-                <midino>0x1C</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>cue_default</key>
-                <description>MIDI Learned from 80 messages.</description>
-                <status>0x98</status>
-                <midino>0x1E</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter2</key>
-                <description>MIDI Learned from 2244 messages.</description>
-                <status>0xB8</status>
-                <midino>0x1C</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>sync_enabled</key>
-                <description>MIDI Learned from 144 messages.</description>
-                <status>0x97</status>
-                <midino>0x1D</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter3</key>
-                <description>MIDI Learned from 3570 messages.</description>
-                <status>0xB7</status>
-                <midino>0x1B</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>sync_enabled</key>
-                <description>MIDI Learned from 88 messages.</description>
-                <status>0x98</status>
-                <midino>0x1D</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter3</key>
-                <description>MIDI Learned from 3601 messages.</description>
-                <status>0xB8</status>
-                <midino>0x1B</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>pregain</key>
-                <description>MIDI Learned from 3424 messages.</description>
-                <status>0xB7</status>
-                <midino>0x1A</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>pregain</key>
-                <description>MIDI Learned from 2907 messages.</description>
-                <status>0xB8</status>
-                <midino>0x1A</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>play</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x97</status>
-                <midino>0x1B</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
                 <key>rate</key>
-                <description>MIDI Learned from 660 messages.</description>
+                <description>Left Pitch Bend</description>
                 <status>0xB7</status>
                 <midino>0x19</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>play</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x98</status>
-                <midino>0x1B</midino>
                 <options>
                     <normal/>
                 </options>
@@ -207,9 +56,131 @@
             <control>
                 <group>[Channel2]</group>
                 <key>rate</key>
-                <description>MIDI Learned from 1304 messages.</description>
+                <description>Right Pitch Bend</description>
                 <status>0xB8</status>
                 <midino>0x19</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+<!-- DEDICATED KNOBS-->
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter1</key>
+                <description>Left Equaliser Low</description>
+                <status>0xB7</status>
+                <midino>0x1D</midino>
+                <options>
+                    <normal/>   
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter2</key>
+                <description>Left Equaliser Mid</description>
+                <status>0xB7</status>
+                <midino>0x1C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter3</key>
+                <description>Left Equaliser High</description>
+                <status>0xB7</status>
+                <midino>0x1B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter1</key>
+                <description>Right Equaliser Low</description>
+                <status>0xB8</status>
+                <midino>0x1D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter2</key>
+                <description>Right Equaliser Mid</description>
+                <status>0xB8</status>
+                <midino>0x1C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter3</key>
+                <description>Right Equaliser High</description>
+                <status>0xB8</status>
+                <midino>0x1B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+<!-- DEDICATED BUTTONS-->
+            <control>
+                <group>[Channel1]</group>
+                <key>sync_enabled</key>
+                <description>Left Sync</description>
+                <status>0x97</status>
+                <midino>0x1D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>sync_enabled</key>
+                <description>Right Sync</description>
+                <status>0x98</status>
+                <midino>0x1D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>pfl</key>
+                <description>Left Headphones Button</description>
+                <status>0x97</status>
+                <midino>0x19</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>pfl</key>
+                <description>Right Headphones Button</description>
+                <status>0x98</status>
+                <midino>0x19</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>play</key>
+                <description>Left Play</description>
+                <status>0x97</status>
+                <midino>0x1B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>play</key>
+                <description>Right Play</description>
+                <status>0x98</status>
+                <midino>0x1B</midino>
                 <options>
                     <normal/>
                 </options>
@@ -217,9 +188,49 @@
             <control>
                 <group>[Playlist]</group>
                 <key>LoadSelectedIntoFirstStopped</key>
-                <description>MIDI Learned from 36 messages.</description>
+                <description>Load into focus track free Slot</description>
                 <status>0x97</status>
                 <midino>0x0E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>cue_default</key>
+                <description>Right CUE</description>
+                <status>0x98</status>
+                <midino>0x1E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>cue_default</key>
+                <description>Left CUE</description>
+                <status>0x97</status>
+                <midino>0x1E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>pregain</key>
+                <description>Left Gain</description>
+                <status>0xB7</status>
+                <midino>0x1A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>pregain</key>
+                <description>Right Gain</description>
+                <status>0xB8</status>
+                <midino>0x1A</midino>
                 <options>
                     <normal/>
                 </options>
